@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script type="text/javascript">
+      function two(){
+        document.write('<li>2-1</li>');
+        document.write('<li>2-2</li>');
+      }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+      </script>
+    </ul>
+
+    <h2>Parameter & Argument</h2>
+    <script type="text/javascript">
+      function onPlusOne(){
+        document.write(1+1+'<br>');
+      }
+      onPlusOne();
+      function sum(left, rigth){  //매개변수 parameter
+        document.write(left+rigth+'<br>');
+      }
+      function sumColorRed(left, rigth){  //매개변수 parameter
+        document.write('<div style="color:red">'+left+rigth+'</div><br>');
+      }
+      sum(2,3); // 5           2, 3 이것을 인자라고 하며 argument라고 한다.
+      sumColorRed(2, 6);
+      sum(3,4); // 7
+    </script>
+
+    <h2>Return</h2>
+    <script type="text/javascript">
+    function sum2(left, right){
+      return left+right;
+    }
+    document.write(sum2(2,3)+'<br>');
+    document.write('<div style=color:red>'+sum2(2,3)+'</div>');
+    document.write('<div style=font-size:3rem;>'+sum2(2,3)+'</div>');
+    </script>
+  </body>
+</html>
